@@ -1,0 +1,16 @@
+* {
+    margin: 0;
+    padding: 10px;
+}
+
+.wrapper {
+    margin-top: 100px;
+}
+
+.search-form {
+    margin: 20px 0px;
+    justify-items: center;
+    align-items: center;
+    justify-self: center;
+    justify-content: center;
+}
