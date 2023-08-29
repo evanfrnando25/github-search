@@ -2,7 +2,6 @@ import { persistReducer } from 'redux-persist';
 import storage from 'redux-persist/lib/storage';
 import immutableTransform from 'redux-persist-transform-immutable';
 
-// Membuat reducer dengan caching menggunakan Redux Persist
 const createCachedReducer = (reducerKey, initialState, reducer) => {
   const persistConfig = {
     key: reducerKey,

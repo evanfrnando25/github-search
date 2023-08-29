@@ -1,6 +1,5 @@
 import createCachedReducer from './createCachedReducer';
 
-// src/reducers/searchReducer.js
 const initialState = {
   searchResults: [],
   isLoading: false,

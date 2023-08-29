@@ -25,7 +25,7 @@ export const registerKey = (key) => ({
 
 export const searchUsers = (searchTerm, page = 1) => async (dispatch) => {
   try {
-    dispatch(setLoading()); // Set loading state
+    dispatch(setLoading());
     const response = await axios.get(`https://api.github.com/search/users?q=${searchTerm}&page=${page}`);
     const users = response.data.items.map((item) => ({
       id: item.id,
@@ -50,7 +50,7 @@ export const searchUsers = (searchTerm, page = 1) => async (dispatch) => {
 
 export const searchRepos = (searchTerm, page = 1) => async (dispatch) => {
   try {
-    dispatch(setLoading()); // Set loading state
+    dispatch(setLoading()); 
     const response = await axios.get(`https://api.github.com/search/repositories?q=${searchTerm}&page=${page}`);
     const repos = response.data.items.map((item) => ({
       id: item.id,

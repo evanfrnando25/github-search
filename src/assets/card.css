@@ -2,7 +2,7 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
-  max-width: 1000px; /* Sesuaikan lebar maksimal yang diinginkan */
+  max-width: 1000px; 
   margin: 0 auto;
 }
 

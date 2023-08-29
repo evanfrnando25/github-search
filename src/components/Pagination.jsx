@@ -1,11 +1,10 @@
 import React from 'react';
-import '../assets/pagination.css'; // Import the Pagination styles
+import '../assets/pagination.css';
 
 const Pagination = ({ currentPage, totalPages, onPageChange, searchTerm }) => {
   const getPageNumbers = () => {
     const pageNumbers = [];
-    const maxVisiblePages = 5; // Set the maximum visible page numbers
-
+    const maxVisiblePages = 5; 
     if (totalPages <= maxVisiblePages) {
       for (let i = 1; i <= totalPages; i++) {
         pageNumbers.push(i);
